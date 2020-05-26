@@ -8,7 +8,7 @@ const url = `http://api.openweathermap.org/data/2.5/weather?q=Manchester,uk&appi
 const getWeather = async()=> {
 
     let data = await fetch(url)
-    let jsonData = await fetch(url)
+    let jsonData = await  fetch(url)
     //fs.writeFileSync('data.json', data)
     console.log(await data.json())
 }
